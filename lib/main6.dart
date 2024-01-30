@@ -21,32 +21,29 @@ class MyApp extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            backgroundColor: Color(0xff48416a),
+            backgroundColor: const Color(0xff48416a),
             elevation: 8,
-            shadowColor: Color(0xff48416a),
+            shadowColor: const Color(0xff48416a),
             centerTitle: false,
           ),
           body: Center(
             child: Container(
               alignment: Alignment.center,
-              height: 800,
-              width: 450,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(colors: [
-                  Color(0xff48416a),
-                  Color(0xff2196f3)
-                ],
-               begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter
-                )
-              ),
+              decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                colors: [Color(0xff48416a), Color(0xff2196f3)],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+              )),
               child: Container(
                 alignment: Alignment.center,
                 height: 70,
                 width: 220,
                 decoration: BoxDecoration(
-                  color: Color(0xff456fa3),
-                  borderRadius: BorderRadius.all(Radius.circular(30),),
+                  color: const Color(0xff456fa3),
+                  borderRadius: const BorderRadius.all(
+                    Radius.circular(30),
+                  ),
                   border: Border.all(
                     color: Colors.white,
                     width: 0.5,

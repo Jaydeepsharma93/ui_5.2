@@ -30,27 +30,38 @@ class MyApp extends StatelessWidget {
           body: Center(
             child: Container(
               alignment: Alignment.center,
-              height: 160,
-              width: 280,
-              decoration: BoxDecoration(
-                gradient: const LinearGradient(colors: [
-                  Color(0xffff5722),
-                  Colors.white,
-                  Color(0xff388e3c),
+              height: 800,
+              width: 450,
+              decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                colors: [Color(0xff2196f3),
+                  Color(0xff3e52b6)
                 ],
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter
-                ),
-                border: Border.all(
-                  color: Colors.white,
-                  width: 1.5,
-                ),
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter
+              )
               ),
-              child: const Text(
-                '✴',
-                style: TextStyle(
-                  color: Color(0xff00008b),
-                  fontSize: 60,
+              child: Container(
+                alignment: Alignment.center,
+                height: 160,
+                width: 280,
+                decoration: BoxDecoration(
+                  gradient: const LinearGradient(colors: [
+                    Color(0xffff5722),
+                    Colors.white,
+                    Color(0xff388e3c),
+                  ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
+                  border: Border.all(
+                    color: Colors.white,
+                    width: 1.5,
+                  ),
+                ),
+                child: const Text(
+                  '✴',
+                  style: TextStyle(
+                    color: Color(0xff00008b),
+                    fontSize: 60,
+                  ),
                 ),
               ),
             ),
